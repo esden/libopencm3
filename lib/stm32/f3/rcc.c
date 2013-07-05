@@ -395,7 +395,7 @@ void rcc_clock_setup_hsi(const clock_scale_t *clock)
 	rcc_osc_on(HSI);
 	rcc_wait_for_osc_ready(HSI);
 	/* Select HSI as SYSCLK source. */
-	rcc_set_sysclk_source(RCC_CFGR_SW_HSI); /* XXX: se cayo *//
+	rcc_set_sysclk_source(RCC_CFGR_SW_HSI); /* XXX: se cayo */
 	rcc_wait_for_sysclk_status(HSI);
 
 	rcc_osc_off(PLL);
